@@ -1,7 +1,7 @@
 import numpy as np
 
 
-class params:
+class Params:
     def __init__(self,F,k1,k_1,kH,k_H,k3,k_3,k4,k_4,muAOB,muNOB,KNH3, KAlk, KNO2, rhoAOB, rhoNOB,TGC,T,w0,YAOB,YNOB):
          self.F = F # flow rate
          self.k1=k1 # forward rate constant for CO2 to HCO3
@@ -53,4 +53,4 @@ T=14# °C
 w0=70#g
 
 
-params=params(F,k1,k_1,kH,k_H,k3,k_3,k4,k_4,muAOB,muNOB,KNH3,KAlk,KNO2,rhoAOB,rhoNOB,TGC,T,w0,YAOB,YNOB)
+# params=params(F,k1,k_1,kH,k_H,k3,k_3,k4,k_4,muAOB,muNOB,KNH3,KAlk,KNO2,rhoAOB,rhoNOB,TGC,T,w0,YAOB,YNOB)
