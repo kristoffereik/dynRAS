@@ -1,5 +1,5 @@
 import numpy as np
-from Growth_Bacteria import growth_bact
+from .Growth_Bacteria import growth_bact
 def chemODE_BIO(Tank,params,t):
     Growth=growth_bact(Tank,params)
     g_AOB=Growth[0]

@@ -1,5 +1,5 @@
-from solver import Solver
-from params import Params
+from .solver import Solver
+from .params import Params
 
 F=60/60 #L.s-1
 

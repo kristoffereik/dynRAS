@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "DynRAS"
+version = "0.1.0"
+authors = [
+  { name="Marie Montjouridès", email="m.montjourides@uib.no" },
+  { name="Kristoffer Eik", email="kristoffer.eik@gmail.com" },
+]
+description = "RAS simulation tool"
+readme = "README.md"
+requires-python = ">=3.8"
+requires = [
+    "uv_build >= 0.7.19",
+    "matplotlib>=3.10.0",
+    "numpy>=2.2.3",
+    "pandas>=2.2.3",
+    "scipy>=1.15.1",
+    "transformers>=4.48.3",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/kristoffereik/dynRAS"
+Issues = "https://github.com/kristoffereik/dynRAS/issues"

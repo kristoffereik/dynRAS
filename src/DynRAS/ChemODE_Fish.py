@@ -1,6 +1,6 @@
 import numpy as np
 import math
-from TAN_prod import NH4_rate
+from .TAN_prod import NH4_rate
 def chemODE_FISH(Tank, params,t):
     day=t/60/60/24
     print(day)

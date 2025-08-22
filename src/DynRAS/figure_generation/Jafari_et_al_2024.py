@@ -8,9 +8,9 @@ from matplotlib.patches import Patch
 plt.rcParams['font.family'] = 'Arial'
 plt.rcParams['font.size'] = 12
 
-data = pd.read_csv('Experimental_data/co2_alkalinity.csv')
+data = pd.read_csv('../Experimental_data/co2_alkalinity.csv')
 simulation = pd.read_csv('Simulation_result/Jafari_et_al_2024.csv')
-data2 = pd.read_csv('Experimental_data/ph_data.csv')
+data2 = pd.read_csv('../Experimental_data/ph_data.csv')
 
 height_in =10-(10/3)
 width_in = 8
@@ -119,7 +119,7 @@ hourly_means_nh4_nh3 = simulation.groupby(simulation['Time_hours'].astype(int))[
 hourly_stds_nh4_nh3 = simulation.groupby(simulation['Time_hours'].astype(int))['NH4_NH3_Combined'].std()
 
 
-Timeseries = pd.read_csv('Experimental_data/Timeserie_module_1.csv')
+Timeseries = pd.read_csv('../Experimental_data/Timeserie_module_1.csv')
 Timeseries['date'] = pd.to_datetime(Timeseries['date'])
 
 

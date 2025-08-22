@@ -1,17 +1,17 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-from ChemODE_BIO import chemODE_BIO #simulation case 1 modify uncomment function for the right hand side of for the ODE of the biofilter class to run it
-from ChemODE_BIO import chemODE_BIO_HCO3 #simulation case 1 HCO3 dosing only uncomment the function for the right hand side of for the ODE of the biofilter class to run it
-from ChemODE_BIO import chemODE_BIO_NaOH #simulation case 1 NaOH dosing only uncomment the function for the right hand side of for the ODE of the biofilter class to run it
-from ChemODE_BIO import chemODE_BIO_alk_control
-from ChemODE_BIO import chemODE_BIO_pH_control #set a pH threshold and dose NaOH or HCO3 to maintain the pH at the setpoint uncomment the function for the right hand side of for the ODE of the biofilter class to run it
-from ChemODE_Fish import chemODE_FISH
+from .ChemODE_BIO import chemODE_BIO #simulation case 1 modify uncomment function for the right hand side of for the ODE of the biofilter class to run it
+from .ChemODE_BIO import chemODE_BIO_HCO3 #simulation case 1 HCO3 dosing only uncomment the function for the right hand side of for the ODE of the biofilter class to run it
+from .ChemODE_BIO import chemODE_BIO_NaOH #simulation case 1 NaOH dosing only uncomment the function for the right hand side of for the ODE of the biofilter class to run it
+from .ChemODE_BIO import chemODE_BIO_alk_control
+from .ChemODE_BIO import chemODE_BIO_pH_control #set a pH threshold and dose NaOH or HCO3 to maintain the pH at the setpoint uncomment the function for the right hand side of for the ODE of the biofilter class to run it
+from .ChemODE_Fish import chemODE_FISH
 from scipy.integrate import solve_ivp
-from params import params
-from Fish_growth import Weight
-from Biomass_function import Biomass
-from ChemODE_DGS import chemODE_DGS
+from .params import Params
+from .Fish_growth import Weight
+from .Biomass_function import Biomass
+from .ChemODE_DGS import chemODE_DGS
 
 class Sump:
     def __init__(self, CO2aq, HCO3, CO32, H, OH,NH4, NH3, NO2,V,exchange_rate):
